@@ -23,8 +23,15 @@ export default function App() {
             rel="noreferrer"
           >
             open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://zippy-arithmetic-08831d.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
           </a>
-          .
         </footer>
       </div>
     </div>

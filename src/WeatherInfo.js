@@ -13,7 +13,7 @@ export default function WeatherInfo(props) {
         </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
-      <div className="row mt-3">
+      <div className="row mt-3 mb-3">
         <div className="col-6">
           <div className="clearfix">
             <span className="float-left ps-2">
@@ -26,13 +26,12 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6 mt-4">
           <ul>
-            <li>Feels Like: {Math.round(props.data.feelsLike)} ºC</li>
             <li>
               Humidity: {props.data.humidity}
               {""}%
             </li>
             <li>
-              Wind: {Math.round(props.data.wind)} {""}mph
+              Wind: {Math.round(props.data.wind)} {""}km/h
             </li>
           </ul>
         </div>
