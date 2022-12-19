@@ -7,8 +7,8 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Tokyo" />
-        <footer>
-          This project was coded by{" "}
+        <footer className="text-center">
+          Coded by{" "}
           <a
             href="https://breanda.netlify.app/"
             target="_blank"

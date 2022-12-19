@@ -1,23 +1,26 @@
 .Weather {
+  background: #90b8f8;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(135, 135, 135);
-  border: 1px solid #e2e2e2;
-  border-radius: 4px;
-  padding: 16px;
+  color: #353941da;
+  border: 1px solid #90b8f8;
+  border-radius: 20px;
+  padding: 25px;
 }
 
 .Weather .btn-search {
-  background: #aba5fe;
-  color: #ffff;
+  background: #5f85db;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .Weather .btn-search:hover {
-  background: #968efd;
-  color: #ffff;
+  background: #fff;
+  color: #5f85db;
 }
 
 .Weather h1 {
-  color: rgb(61, 61, 61);
+  color: #26282b;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -41,16 +44,15 @@
 }
 
 .Weather .temperature {
-  color: rgb(61, 61, 61);
+  color: #26282b;
   margin-left: 10px;
   margin-right: 8px;
-  font-size: 55px;
+  font-size: 52px;
   font-weight: 400;
   line-height: 60px;
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
   font-weight: 400;
   position: relative;
   top: -16px;
@@ -60,8 +62,8 @@
 
 .WeatherTemperature .btn-unit,
 .btn-unit-active {
-  font-size: 18px;
-  background: #aba5fe;
+  font-size: 16px;
+  background: #5f85db;
   color: #ffff;
   font-weight: 600;
   border-radius: 1px;
@@ -72,6 +74,6 @@
 }
 
 .WeatherTemperature .btn:hover {
-  background: #aba5fe;
+  background: #90b8f8;
   color: #ffff;
 }

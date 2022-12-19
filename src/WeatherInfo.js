@@ -19,7 +19,7 @@ export default function WeatherInfo(props) {
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
       <div className="row mt-3 mb-3">
-        <div className="col-6">
+        <div className="col-7">
           <div className="clearfix">
             <span className="float-left ps-2">
               <WeatherIcon code={props.data.icon} size={62} />
@@ -33,7 +33,7 @@ export default function WeatherInfo(props) {
             </span>
           </div>
         </div>
-        <div className="col-6 mt-3">
+        <div className="col-5 mt-3">
           <ul>
             <li>
               Feels like:{" "}
