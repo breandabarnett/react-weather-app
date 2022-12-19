@@ -1,43 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function WeatherTemperature(props) {
-  const [unit, setUnit] = useState("celsius");
-
-  function showFahrenheit(event) {
+  const showFahrenheit = (event) => {
     event.preventDefault();
-    setUnit("fahrenheit");
-  }
+    props.setUnit("fahrenheit");
+  };
 
-  function showCelsius(event) {
+  const showCelsius = (event) => {
     event.preventDefault();
-    setUnit("celsius");
-  }
+    props.setUnit("celsius");
+  };
 
-  function fahrenheit() {
-    return (props.celsius * 9) / 5 + 32;
-  }
-
-  if (unit === "celsius") {
+  if (props.unit === "celsius") {
     return (
       <span className="WeatherTemperature">
         <span className="temperature">{Math.round(props.celsius)}</span>
-        <span className="unit">
-          ºC |{" "}
-          <a href="/" alt="Fahrenheit" onClick={showFahrenheit}>
+        <span className="unit" onClick={showCelsius}>
+          <button type="button" className="btn btn-unit-active">
+            ºC
+          </button>
+        </span>
+        <span className="unit" onClick={showFahrenheit}>
+          <button type="button" className="btn btn-unit">
             ºF
-          </a>
+          </button>
         </span>
       </span>
     );
   } else {
     return (
       <span className="WeatherTemperature">
-        <span className="temperature">{Math.round(fahrenheit())}</span>
-        <span className="unit">
-          <a href="/" alt="Celsius" onClick={showCelsius}>
+        <span className="temperature">
+          {Math.round((props.celsius * 9) / 5 + 32)}
+        </span>
+        <span className="unit" onClick={showCelsius}>
+          <button type="button" className="btn btn-unit">
             ºC
-          </a>{" "}
-          | ºF
+          </button>
+        </span>
+
+        <span className="unit active" onClick={showFahrenheit}>
+          <button type="button" className="btn btn-unit-active">
+            ºF
+          </button>
         </span>
       </span>
     );

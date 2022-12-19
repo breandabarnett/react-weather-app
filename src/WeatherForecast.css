@@ -4,9 +4,15 @@
 
 .WeatherForecast-day {
   margin-bottom: 5px;
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+}
+
+.WeatherForecast-temperature-max {
+  color: rgb(61, 61, 61);
 }
 
 .WeatherForecast-temperature-min {
-  opacity: 0.6;
+  opacity: 0.8;
   margin-left: 5px;
 }

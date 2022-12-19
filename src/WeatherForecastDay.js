@@ -4,11 +4,17 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherForecastDay(props) {
   function maxTemperature() {
     let temperature = Math.round(props.data.temperature.maximum);
+    if (props.unit === "fahrenheit") {
+      temperature = Math.round((temperature * 9) / 5 + 32);
+    }
     return `${temperature}`;
   }
 
   function minTemperature() {
     let temperature = Math.round(props.data.temperature.minimum);
+    if (props.unit === "fahrenheit") {
+      temperature = Math.round((temperature * 9) / 5 + 32);
+    }
     return `${temperature}`;
   }
 

@@ -4,6 +4,11 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
+  console.log(props.data);
+
+  let celsius_feels_like = Math.round(props.data.feelsLike);
+  let fahrenheit_feels_like = Math.round((props.data.feelsLike * 9) / 5 + 32);
+
   return (
     <div>
       <h1>{props.data.city}</h1>
@@ -20,12 +25,24 @@ export default function WeatherInfo(props) {
               <WeatherIcon code={props.data.icon} size={62} />
             </span>
             <span className="float-left">
-              <WeatherTemperature celsius={props.data.temperature} />
+              <WeatherTemperature
+                celsius={props.data.temperature}
+                unit={props.unit}
+                setUnit={props.setUnit}
+              />
             </span>
           </div>
         </div>
         <div className="col-6 mt-3">
           <ul>
+            <li>
+              Feels like:{" "}
+              {props.unit === "celsius" ? (
+                <span>{celsius_feels_like} ºC</span>
+              ) : (
+                <span>{fahrenheit_feels_like} ºF</span>
+              )}
+            </li>
             <li>
               Humidity: {props.data.humidity}
               {""}%
