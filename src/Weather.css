@@ -6,6 +6,16 @@
   padding: 16px;
 }
 
+.Weather .btn-search {
+  background: #aba5fe;
+  color: #ffff;
+}
+
+.Weather .btn-search:hover {
+  background: #968efd;
+  color: #ffff;
+}
+
 .Weather h1 {
   color: rgb(61, 61, 61);
   font-size: 24px;
