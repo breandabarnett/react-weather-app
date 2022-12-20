@@ -21,7 +21,7 @@ export default function FormattedDate(props) {
   return (
     <div className="FormattedDate">
       <ul>
-        <li>{day}</li>
+        <li className="day">{day}</li>
         <li>
           <i class="fa-regular fa-clock me-1"></i>
           {hours}:{minutes}

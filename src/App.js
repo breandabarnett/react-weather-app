@@ -8,30 +8,23 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="Tokyo" />
         <footer className="text-center">
-          Coded by{" "}
-          <a
-            href="https://breanda.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Breanda Barnett
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/breandabarnett/react-weather-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            open-sourced on GitHub
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://zippy-arithmetic-08831d.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            hosted on Netlify
-          </a>
+          <div>
+            <a
+              href="https://github.com/breandabarnett/react-weather-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-sourced
+            </a>{" "}
+            on GitHub <i class="fa-solid fa-cloud"></i> Coded & Designed by{" "}
+            <a
+              href="https://breanda.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Breanda Barnett
+            </a>
+          </div>
         </footer>
       </div>
     </div>

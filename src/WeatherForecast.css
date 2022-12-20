@@ -11,6 +11,7 @@
 
 .WeatherForecast-temperature-max {
   color: var(--main-text);
+  font-weight: 500;
 }
 
 .WeatherForecast-temperature-min {

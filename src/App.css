@@ -16,6 +16,7 @@
 
 .App footer {
   color: var(--main-text);
-  font-size: 11px;
+  opacity: 0.9;
+  font-size: 13px;
   margin: 10px 0;
 }

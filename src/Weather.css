@@ -3,11 +3,12 @@
   --accent-color: #fda087;
   --main-text: #3a6063;
   --accent-text: #fff;
+  --font-family: "Nunito", sans-serif;
 }
 
 .Weather {
   background: var(--main-color);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
   color: var(--main-text);
   border: 1px solid var(--main-color);
   border-radius: 20px;
@@ -51,7 +52,6 @@
 
 .Weather li {
   font-size: 16px;
-  font-weight: 100;
   line-height: 19px;
   list-style: none;
 }
@@ -68,8 +68,8 @@
   color: var(--main-text);
   margin-left: 10px;
   margin-right: 8px;
-  font-size: 52px;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 600;
   line-height: 60px;
 }
 
@@ -109,4 +109,8 @@
 .FormattedDate {
   text-align: right;
   margin: 30px 0 5px 0;
+}
+
+.FormattedDate .day {
+  font-weight: 600;
 }
