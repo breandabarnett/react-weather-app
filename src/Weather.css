@@ -1,8 +1,8 @@
 :root {
-  --main-color: #c1e5e7;
+  --main-color: #bbe2e4;
   --accent-color: #fda087;
   --main-text: #3a6063;
-  --accent-text: #fff;
+  --accent-text: #ffffff;
   --font-family: "Nunito", sans-serif;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .Weather .form-control {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 2px;
 }
 
