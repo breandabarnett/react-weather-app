@@ -1,20 +1,21 @@
 .App {
   max-width: 600px;
   margin: 30px auto;
-  color: #353941;
+  color: var(--main-text);
 }
 
 .App a {
   text-decoration: none;
-  color: #a7c7fa;
+  color: var(--main-text);
   font-weight: 600;
 }
 
 .App a:hover {
-  color: #fff;
+  color: var(--accent-color);
 }
 
 .App footer {
+  color: var(--main-text);
   font-size: 11px;
   margin: 10px 0;
 }

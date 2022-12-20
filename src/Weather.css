@@ -1,33 +1,50 @@
+:root {
+  --main-color: #c1e5e7;
+  --accent-color: #fda087;
+  --main-text: #3a6063;
+  --accent-text: #fff;
+}
+
 .Weather {
-  background: #90b8f8;
+  background: var(--main-color);
   font-family: Arial, Helvetica, sans-serif;
-  color: #353941da;
-  border: 1px solid #90b8f8;
+  color: var(--main-text);
+  border: 1px solid var(--main-color);
   border-radius: 20px;
   padding: 25px;
 }
 
 .Weather .btn-search {
-  background: #5f85db;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--accent-text);
   font-weight: 600;
   letter-spacing: 0.5px;
+  border-radius: 2px;
 }
 
 .Weather .btn-search:hover {
-  background: #fff;
-  color: #5f85db;
+  background: var(--main-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.Weather .form-control {
+  border: 1px solid #fff;
+  border-radius: 2px;
 }
 
 .Weather h1 {
-  color: #26282b;
-  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--main-text);
+  letter-spacing: 0.5px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 29px;
-  margin: 20px 0 0 0;
+  margin: 20px 0 5px 0;
 }
 
 .Weather ul {
+  opacity: 0.7;
   margin: 0;
   padding: 0;
 }
@@ -43,8 +60,12 @@
   display: inline-block;
 }
 
+.Weather hr {
+  color: var(--main-text);
+}
+
 .Weather .temperature {
-  color: #26282b;
+  color: var(--main-text);
   margin-left: 10px;
   margin-right: 8px;
   font-size: 52px;
@@ -55,7 +76,7 @@
 .Weather .unit {
   font-weight: 400;
   position: relative;
-  top: -16px;
+  top: -14px;
   line-height: 1;
   margin-left: 0px;
 }
@@ -63,17 +84,29 @@
 .WeatherTemperature .btn-unit,
 .btn-unit-active {
   font-size: 16px;
-  background: #5f85db;
-  color: #ffff;
+  background: var(--accent-color);
+  color: var(--accent-text);
   font-weight: 600;
+  border: 1px solid var(--accent-color);
   border-radius: 1px;
 }
 
 .WeatherTemperature .btn-unit {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .WeatherTemperature .btn:hover {
-  background: #90b8f8;
-  color: #ffff;
+  background: var(--main-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.WeatherInfo .description {
+  margin: 15px 0 0 0;
+  text-align: right;
+}
+
+.FormattedDate {
+  text-align: right;
+  margin: 30px 0 5px 0;
 }

@@ -10,18 +10,24 @@ export default function WeatherInfo(props) {
   let fahrenheit_feels_like = Math.round((props.data.feelsLike * 9) / 5 + 32);
 
   return (
-    <div>
-      <h1>{props.data.city}</h1>
-      <ul>
-        <li>
-          <FormattedDate date={props.data.date} />
-        </li>
-        <li className="text-capitalize">{props.data.description}</li>
-      </ul>
-      <div className="row mt-3 mb-3">
-        <div className="col-7">
+    <div className="WeatherInfo">
+      <div className="row">
+        <div className="col-9 ps-1">
+          <h1>{props.data.city}</h1>
+          <ul>
+            <li className="text-capitalize mb-3">{props.data.description}</li>
+          </ul>
+        </div>
+        <div className="col-3">
+          <li>
+            <FormattedDate date={props.data.date} />
+          </li>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-8 px-0 current-temp">
           <div className="clearfix">
-            <span className="float-left ps-2">
+            <span className="float-left ps-1">
               <WeatherIcon code={props.data.icon} size={62} />
             </span>
             <span className="float-left">
@@ -33,7 +39,7 @@ export default function WeatherInfo(props) {
             </span>
           </div>
         </div>
-        <div className="col-5 mt-3">
+        <div className="col-4 px-1 description">
           <ul>
             <li>
               Feels like:{" "}
@@ -41,14 +47,16 @@ export default function WeatherInfo(props) {
                 <span>{celsius_feels_like} ºC</span>
               ) : (
                 <span>{fahrenheit_feels_like} ºF</span>
-              )}
+              )}{" "}
+              <i class="fa-solid fa-temperature-three-quarters"></i>
             </li>
             <li>
               Humidity: {props.data.humidity}
-              {""}%
+              {""}% <i class="fa-solid fa-droplet"></i>
             </li>
             <li>
-              Wind: {Math.round(props.data.wind)} {""}km/h
+              Wind: {Math.round(props.data.wind)} {""}km/h{" "}
+              <i class="fa-solid fa-wind"></i>
             </li>
           </ul>
         </div>

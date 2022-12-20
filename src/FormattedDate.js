@@ -19,8 +19,14 @@ export default function FormattedDate(props) {
   if (minutes < 10) minutes = `0${minutes}`;
 
   return (
-    <div>
-      {day} {hours}:{minutes}
+    <div className="FormattedDate">
+      <ul>
+        <li>{day}</li>
+        <li>
+          <i class="fa-regular fa-clock me-1"></i>
+          {hours}:{minutes}
+        </li>
+      </ul>
     </div>
   );
 }
