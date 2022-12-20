@@ -7,7 +7,7 @@
 .App a {
   text-decoration: none;
   color: var(--main-text);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .App a:hover {
@@ -15,8 +15,10 @@
 }
 
 .App footer {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 500;
   color: var(--main-text);
   opacity: 0.9;
-  font-size: 13px;
   margin: 10px 0;
 }
