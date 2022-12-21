@@ -12,22 +12,22 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
-        <div className="col-9 ps-3">
+        <div className="col-8 ps-2 pe-1">
           <h1>{props.data.city}</h1>
           <ul>
             <li className="text-capitalize mb-3">{props.data.description}</li>
           </ul>
         </div>
-        <div className="col-3 pe-3">
+        <div className="col-4 pe-2">
           <li>
             <FormattedDate date={props.data.date} />
           </li>
         </div>
       </div>
       <div className="row">
-        <div className="col-8 px-0 current-temp">
+        <div className="col-7 px-0 current-temp">
           <div className="clearfix">
-            <span className="float-left ps-3">
+            <span className="float-left ps-2">
               <WeatherIcon code={props.data.icon} size={60} />
             </span>
             <span className="float-left">
@@ -39,7 +39,7 @@ export default function WeatherInfo(props) {
             </span>
           </div>
         </div>
-        <div className="col-4 pe-3 description">
+        <div className="col-5 ps-0 pe-2 description">
           <ul>
             <li>
               Feels like:{" "}

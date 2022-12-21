@@ -1,7 +1,7 @@
 :root {
-  --main-color: #bbe2e4;
-  --accent-color: #fda087;
-  --main-text: #3a6063;
+  --main-color: rgb(187, 226, 228);
+  --accent-color: rgb(253, 160, 135);
+  --main-text: rgb(43, 51, 63);
   --accent-text: #ffffff;
   --font-family: "Nunito", sans-serif;
 }
@@ -12,7 +12,7 @@
   color: var(--main-text);
   border: 1px solid var(--main-color);
   border-radius: 20px;
-  padding: 25px;
+  padding: 28px;
 }
 
 .Weather .btn-search {
@@ -39,7 +39,7 @@
   color: var(--main-text);
   letter-spacing: 0.5px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 29px;
   margin: 20px 0 5px 0;
 }
@@ -108,9 +108,75 @@
 
 .FormattedDate {
   text-align: right;
-  margin: 30px 0 5px 0;
+  margin: 28px 0 5px 0;
 }
 
 .FormattedDate .day {
   font-weight: 600;
+}
+
+/*SMALLER DEVICE ADJUSTMENTS*/
+@media (max-width: 522px) {
+  body {
+    margin-top: 50px;
+  }
+
+  .Weather {
+    padding: 24px;
+  }
+
+  .Weather .form-control,
+  .Weather .btn-search,
+  .WeatherForecast {
+    font-size: 13px;
+  }
+
+  .Weather h1 {
+    font-size: 18px;
+    margin: 20px 0 0 0;
+  }
+
+  .Weather li {
+    font-size: 12px;
+  }
+
+  .Weather .temperature {
+    margin-left: 8px;
+    margin-right: 6px;
+    font-size: 33px;
+  }
+
+  .Weather canvas {
+    width: 42px;
+  }
+
+  .Weather .unit {
+    top: -9px;
+  }
+
+  .WeatherInfo .description {
+    margin: 8px 0 0 0;
+  }
+
+  .WeatherTemperature .btn-unit,
+  .btn-unit-active {
+    font-size: 12px;
+    padding: 6px 9px;
+  }
+
+  .WeatherForecast canvas {
+    width: 30px;
+  }
+
+  .WeatherForecast .col {
+    padding: 0 2px 0 2px;
+  }
+
+  .WeatherForecast-temperatures {
+    font-size: 12px;
+  }
+
+  .App footer {
+    font-size: 10px;
+  }
 }
