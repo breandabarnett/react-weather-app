@@ -72,7 +72,7 @@ export default function Weather(props) {
     return (
       <ProgressBar
         height="80"
-        width="auto"
+        width="80"
         ariaLabel="progress-bar-loading"
         wrapperStyle={{}}
         wrapperClass="progress-bar-wrapper"
