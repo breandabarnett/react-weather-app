@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import { ProgressBar } from "react-loader-spinner";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -69,16 +68,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return (
-      <ProgressBar
-        height="80"
-        width="80"
-        ariaLabel="progress-bar-loading"
-        wrapperStyle={{}}
-        wrapperClass="progress-bar-wrapper"
-        borderColor="#b9e6e6"
-        barColor="#fda087"
-      />
-    );
+    return "Loading...";
   }
 }
