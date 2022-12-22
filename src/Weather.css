@@ -10,6 +10,7 @@
   background: var(--main-color);
   font-family: var(--font-family);
   color: var(--main-text);
+  box-shadow: 0px 0px 9px rgba(141, 141, 141, 0.2);
   border: 1px solid var(--main-color);
   border-radius: 20px;
   padding: 28px;

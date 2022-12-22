@@ -4,8 +4,6 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
-  console.log(props.data);
-
   let celsius_feels_like = Math.round(props.data.feelsLike);
   let fahrenheit_feels_like = Math.round((props.data.feelsLike * 9) / 5 + 32);
 
