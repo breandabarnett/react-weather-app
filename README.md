@@ -1,3 +1,23 @@
+# 🌦️ Aqua React Weather App
+
+<p>
+  An easy-to-use weather web application that delivers real-time forecasts for any city. Customize to your preference with metric or imperial temperature units and visualize conditions as animated icons. Integrated with SheCodes Weather API. Coded using React.js.
+</p>
+<p>
+  This was a 
+  <a href="https://www.shecodes.io/graduates/39418-breanda-barnett"> certification </a> project for the SheCodes React Workshop.
+</p>
+<h4>🔗 https://aqua-creamsicle.netlify.app/</h4>
+<br />
+<br />
+<br />
+<hr />
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
