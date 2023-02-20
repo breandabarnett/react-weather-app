@@ -1,4 +1,4 @@
-# 🌦️ Aqua React Weather App
+# 🌦️ Aqua React Weather
 
 <p>
   An easy-to-use weather web application that delivers real-time forecasts for any city. Customize to your preference with metric or imperial temperature units and visualize conditions as animated icons. Integrated with SheCodes Weather API. Coded using React.js.
