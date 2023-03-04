@@ -1,21 +1,29 @@
-# 🌦️ Aqua React Weather
+# 🌦️ Aqua Weather
+An easy-to-use weather web application that delivers real-time forecasts for any city. Customize to your preference with metric or imperial temperature units and visualize conditions as animated icons. Integrated with SheCodes Weather API. Coded using React.js.
 
+<h4>🔗 https://aqua-creamsicle.netlify.app/</h4>
+
+<img src="" alt="live site preview gif"/>
+
+<br />
 <p>
-  An easy-to-use weather web application that delivers real-time forecasts for any city. Customize to your preference with metric or imperial temperature units and visualize conditions as animated icons. Integrated with SheCodes Weather API. Coded using React.js.
-</p>
-<p>
-  This was a 
+ 🏅 This was a 
   <a href="https://www.shecodes.io/graduates/39418-breanda-barnett"> certification </a> project for the SheCodes React Workshop.
 </p>
-<h4>🔗 https://aqua-creamsicle.netlify.app/</h4>
 <br />
+
+## Want to see more from my portfolio?
+Take a look!
+
+**Pastel Weather:** https://github.com/breandabarnett/Weather-App-Project
+
+**React.Dictionary:** https://github.com/breandabarnett/dictionary-project
+
+**Personal Portfolio** https://github.com/breandabarnett/Personal-Portfolio
+
 <br />
 <br />
 <hr />
-
-
-
-
 
 
 # Getting Started with Create React App
