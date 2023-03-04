@@ -3,7 +3,8 @@ An easy-to-use weather web application that delivers real-time forecasts for any
 
 <h4>🔗 https://aqua-creamsicle.netlify.app/</h4>
 
-<img src="" alt="live site preview gif"/>
+<img src="https://user-images.githubusercontent.com/104718008/222879991-3a37f484-8f6e-4570-af1f-264389366f0a.gif" alt="live site preview gif" />
+
 
 <br />
 <p>
